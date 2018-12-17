@@ -18,7 +18,7 @@ import { SwapiServiceProvider } from "../swapi-service-context";
 
 import "./app.css";
 
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
 import { StarshipDetails } from "../sw-components";
 
 class App extends Component {
@@ -48,7 +48,7 @@ class App extends Component {
     return (
       <ErrorBoundary>
         <SwapiServiceProvider value={this.state.swapiService}>
-          <Router>
+          <Router basename="/star-db">
             <div className="container">
               <Header onServiceChange={this.onServiceChange} />
 
