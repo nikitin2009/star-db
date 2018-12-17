@@ -25,6 +25,9 @@ const Header = ({ onServiceChange }) => {
         <li>
           <Link to="/secret">Secret</Link>
         </li>
+        <li>
+          <Link to="/bla-bla-bla">404</Link>
+        </li>
       </ul>
       <button onClick={onServiceChange} className="btn btn-primary btn-small">
         Change service
